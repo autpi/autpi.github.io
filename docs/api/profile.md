@@ -2,6 +2,14 @@
 
 The **ModCS.Mod namespace** contains functions related to the save files of mods.
 
+## ModCS.Profile.Exists()
+
+```lua
+ModCS.Profile.Exists("ProfileName.dat")
+```
+
+Returns true if `ProfileName.dat` exists. Returns true if the standard Profile.dat exists if there is no string attached.
+
 ## ModCS.Profile.Save()
 
 ```lua
@@ -17,6 +25,14 @@ ModCS.Profile.Load("ProfileName.dat")
 ```
 
 Loads the game when the function is called. The argument is optional, and will load the standard Profile.dat if there is no string attached.
+
+## ModCS.Profile.GetName()
+
+```lua
+ModCS.Profile.GetName()
+```
+
+Returns the string of the most recent time the game saved, loaded, or checked for a save file.
 
 ## ModCS.Profile.DuringSave()
 
