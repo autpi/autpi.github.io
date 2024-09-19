@@ -1595,6 +1595,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#modcsprofileexists" class="md-nav__link">
+    <span class="md-ellipsis">
+      ModCS.Profile.Exists()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#modcsprofilesave" class="md-nav__link">
     <span class="md-ellipsis">
       ModCS.Profile.Save()
@@ -1607,6 +1616,15 @@
   <a href="#modcsprofileload" class="md-nav__link">
     <span class="md-ellipsis">
       ModCS.Profile.Load()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modcsprofilegetname" class="md-nav__link">
+    <span class="md-ellipsis">
+      ModCS.Profile.GetName()
     </span>
   </a>
   
@@ -1725,6 +1743,10 @@
 
 <h1 id="modcsprofile">ModCS.Profile</h1>
 <p>The <strong>ModCS.Mod namespace</strong> contains functions related to the save files of mods.</p>
+<h2 id="modcsprofileexists">ModCS.Profile.Exists()</h2>
+<div class="highlight"><pre><span></span><code><span class="n">ModCS</span><span class="p">.</span><span class="n">Profile</span><span class="p">.</span><span class="n">Exists</span><span class="p">(</span><span class="s2">&quot;ProfileName.dat&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>Returns true if <code>ProfileName.dat</code> exists. Returns true if the standard Profile.dat exists if there is no string attached.</p>
 <h2 id="modcsprofilesave">ModCS.Profile.Save()</h2>
 <div class="highlight"><pre><span></span><code><span class="n">ModCS</span><span class="p">.</span><span class="n">Profile</span><span class="p">.</span><span class="n">Save</span><span class="p">(</span><span class="s2">&quot;ProfileName.dat&quot;</span><span class="p">)</span>
 </code></pre></div>
@@ -1733,6 +1755,10 @@
 <div class="highlight"><pre><span></span><code><span class="n">ModCS</span><span class="p">.</span><span class="n">Profile</span><span class="p">.</span><span class="n">Load</span><span class="p">(</span><span class="s2">&quot;ProfileName.dat&quot;</span><span class="p">)</span>
 </code></pre></div>
 <p>Loads the game when the function is called. The argument is optional, and will load the standard Profile.dat if there is no string attached.</p>
+<h2 id="modcsprofilegetname">ModCS.Profile.GetName()</h2>
+<div class="highlight"><pre><span></span><code><span class="n">ModCS</span><span class="p">.</span><span class="n">Profile</span><span class="p">.</span><span class="n">GetName</span><span class="p">()</span>
+</code></pre></div>
+<p>Returns the string of the most recent time the game saved, loaded, or checked for a save file.</p>
 <h2 id="modcsprofileduringsave">ModCS.Profile.DuringSave()</h2>
 <p>This function is called whenever the game is saved.</p>
 <details class="example">
