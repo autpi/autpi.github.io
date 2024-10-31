@@ -43,9 +43,7 @@ Returns the attribute of the tile at tile unit coordinates `x` and `y`.
 ## ModCS.Map.ChangeTile()
 
 ```lua
-ModCS.Map.ChangeTile(no, x, y, smoke)
+ModCS.Map.ChangeTile(no, x, y)
 ```
 
 Changes the tile at tile unit coordinates `x` and `y` of the current map to tile `no`.
-
-`smoke` is an optional parameter and a Boolean. If set to true, spawn smoke NPCs at the position of the changing tile.
