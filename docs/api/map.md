@@ -40,6 +40,14 @@ ModCS.Map.GetAttribute(x, y)
 
 Returns the attribute of the tile at tile unit coordinates `x` and `y`.
 
+## ModCS.Map.GetTile()
+
+```lua
+ModCS.Map.GetTile(x, y)
+```
+
+Returns the tile ID at tile unit coordinates `x` and `y`.
+
 ## ModCS.Map.ChangeTile()
 
 ```lua
