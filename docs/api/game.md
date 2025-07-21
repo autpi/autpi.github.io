@@ -97,6 +97,10 @@ This function is called every frame after everything is drawn in the main game l
 There are also other draw functions for other specific situations. They are listed here:
 
 ```lua
+ModCS.Game.DrawBelowStageBack()
+ModCS.Game.DrawAboveStageBack()
+ModCS.Game.DrawBelowStageFront()
+ModCS.Game.DrawAboveStageFront()
 ModCS.Game.DrawBelowPlayer()
 ModCS.Game.DrawAbovePlayer()
 ModCS.Game.DrawBelowFade()

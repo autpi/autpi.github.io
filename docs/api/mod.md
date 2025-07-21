@@ -29,14 +29,14 @@ Sets the version of the game to `v1`.`v2`.`v3`.`v4`. This version will be in the
 ## ModCS.Mod.SetOpening()
 
 ```lua
-ModCS.Mod.SetOpening(no, eve, wait)
+ModCS.Mod.SetOpening(no, x, y, eve, wait)
 ```
 
-Use [Stage](/api/stage/) `no` for the opening sequence ([Game Mode](/api/game/#modcsgamegetmode) 1). `eve` and `wait` are optional parameters.
+Use [Stage](/api/stage/) `no` for the opening sequence ([Game Mode](/api/game/#modcsgamegetmode) 1). `x` and `y` are the coordinates the camera focuses on. `eve` and `wait` are optional parameters.
 
 If `eve` is specified [Event](/api/tsc/#events) `eve` will run once the opening sequence starts, otherwise Event 0 will run.
 
-If `wait` is specified, wait `wait` ticks during the opening before transferring to the title screen.
+If `wait` is specified, wait `wait` ticks during the opening before transferring to the title screen. It will wait 500 ticks by default in vanilla Cave Story.
 
 ## ModCS.Mod.SetStart()
 
