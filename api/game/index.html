@@ -535,6 +535,24 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#modcsgamegetgameflags" class="md-nav__link">
+    <span class="md-ellipsis">
+      ModCS.Game.GetGameFlags()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modcsgamesetgameflags" class="md-nav__link">
+    <span class="md-ellipsis">
+      ModCS.Game.SetGameFlags()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#modcsgameact" class="md-nav__link">
     <span class="md-ellipsis">
       ModCS.Game.Act()
@@ -1579,7 +1597,7 @@
   
   
   <span class="md-ellipsis">
-    NPC Collision detection
+    Bullet Collision detection
     
   </span>
   
@@ -1950,6 +1968,14 @@
 <div class="highlight"><pre><span></span><code><span class="nv">ModCS</span><span class="p">.</span><span class="py">Game</span><span class="p">.</span><span class="nf">CanAct</span><span class="p">()</span>
 </code></pre></div>
 <p>Returns false during a <code>&lt;PRI</code>. Returns true otherwise.</p>
+<h2 id="modcsgamegetgameflags">ModCS.Game.GetGameFlags()</h2>
+<div class="highlight"><pre><span></span><code><span class="nv">ModCS</span><span class="p">.</span><span class="py">Game</span><span class="p">.</span><span class="nf">GetGameFlags</span><span class="p">()</span>
+</code></pre></div>
+<p>Returns the current "Game Flags" value. This is the value checked for "CanControl()" and "CanAct()" as well.</p>
+<h2 id="modcsgamesetgameflags">ModCS.Game.SetGameFlags()</h2>
+<div class="highlight"><pre><span></span><code><span class="nv">ModCS</span><span class="p">.</span><span class="py">Game</span><span class="p">.</span><span class="nf">SetGameFlags</span><span class="p">(</span><span class="nv">num</span><span class="p">)</span>
+</code></pre></div>
+<p>Set the current "Game Flags" value to <code>num</code>.</p>
 <h2 id="modcsgameact">ModCS.Game.Act()</h2>
 <p>This function is called every frame before anything is updated or drawn in the main game loop.</p>
 <details class="example">
