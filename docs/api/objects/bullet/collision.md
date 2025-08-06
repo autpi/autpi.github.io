@@ -1,4 +1,4 @@
-# NPC Collision detection
+# Bullet Collision detection
 
 ## ModCS.Bullet.TouchLeftWall()
 

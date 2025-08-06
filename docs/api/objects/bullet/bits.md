@@ -9,9 +9,9 @@
 | ----- | ------------- | --------------------------------- |
 | 2     | 0x0004        | Ignore tile collision.            |
 | 3     | 0x0008        | Don't vanish when hitting a tile. |
-| 4     | 0x0010        | Go trough invincible NPCs.        |
+| 4     | 0x0010        | Go through invincible Bullets.    |
 | 5     | 0x0020        | Be able to break Snack blocks.    |
-| 6     | 0x0040        | Go trough Snack blocks.           |
+| 6     | 0x0040        | Go through Snack blocks.          |
 
 ## ModCS.Bullet.SetBit()
 
@@ -24,7 +24,7 @@ Sets the bit `bit` for `bul`.
 ## ModCS.Bullet.UnsetBit()
 
 ```lua
-ModCS.Npc.UnsetBit(bul, bit)
+ModCS.Bullet.UnsetBit(bul, bit)
 ```
 
 Unsets the bit `bit` for `bul`.
@@ -32,7 +32,7 @@ Unsets the bit `bit` for `bul`.
 ## ModCS.Bullet.CheckBit()
 
 ```lua
-ModCS.Npc.CheckBit(bul, bit)
+ModCS.Bullet.CheckBit(bul, bit)
 ```
 
 Returns true if the bit `bit` for `bul` is set. Returns false otherwise.

@@ -64,6 +64,22 @@ ModCS.Game.CanAct()
 
 Returns false during a `<PRI`. Returns true otherwise.
 
+## ModCS.Game.GetGameFlags()
+
+```lua
+ModCS.Game.GetGameFlags()
+```
+
+Returns the current "Game Flags" value. This is the value checked for "CanControl()" and "CanAct()" as well.
+
+## ModCS.Game.SetGameFlags()
+
+```lua
+ModCS.Game.SetGameFlags(num)
+```
+
+Set the current "Game Flags" value to `num`.
+
 ## ModCS.Game.Act()
 
 This function is called every frame before anything is updated or drawn in the main game loop.

@@ -28,6 +28,7 @@ ModCS.Key.Up(hold) -- Can be either Up arrow key or L in DoConfig
 ModCS.Key.Right(hold) -- Can be either Right arrow key or ? in DoConfig
 ModCS.Key.Down(hold) -- Can be either Down arrow key or > in DoConfig
 ModCS.Key.Shift(hold) -- Shift key (Not used by gamepad)
+ModCS.Key.Pause(hold) -- Escape/Pause key
 ```
 
 ## ModCS.Key.GetKey()
