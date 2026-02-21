@@ -52,7 +52,7 @@ Makes the camera shake for `time` ticks.
 
 ## ModCS.Camera.SetPlayerFocus()
 ```lua
-ModCS.Camera.SetQuake(time)
+ModCS.Camera.SetPlayerFocus(time)
 ```
 
 Makes the camera focus on the player in `time` ticks. Default would be 16.
