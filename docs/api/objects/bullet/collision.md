@@ -32,6 +32,14 @@ ModCS.Bullet.TouchFloor(bul)
 
 Returns true if `bul` is touching a floor.
 
+## ModCS.Bullet.TouchSurface()
+
+```lua
+ModCS.Bullet.TouchSurface(bul)
+```
+
+Returns true if `bul` is touching a floor, left wall, right wall, or ceiling.
+
 ## ModCS.Bullet.TouchBottomSlopeRight()
 
 ```lua
@@ -71,3 +79,11 @@ ModCS.Bullet.TouchTile(bul)
 ```
 
 Returns true if `bul` is touching any type of collision tile.
+
+## ModCS.Bullet.HitFlag()
+
+```lua
+ModCS.Bullet.HitFlag(bul, flag)
+```
+
+Returns true if the `bul` has the `hit_flag`, "`flag`" active.

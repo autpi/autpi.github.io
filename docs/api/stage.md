@@ -21,6 +21,14 @@ The Stage Table is stored in a `stage.tbl` file that can be found in the `data` 
 
 !!! Note
     In the original game the Stage Table is not stored in a seperate file but hardcoded into the game executable instead.
+    
+## ModCS.Stage.SetTileset()
+
+```lua
+ModCS.Stage.SetTileset("String")
+```
+
+Loads the stage tileset `PrtString` with attribute file `String.pxa`.
 
 ## ModCS.Stage.Transfer()
 
@@ -113,6 +121,30 @@ ModCS.Stage.LoadTable("stage.tbl")
 ```
 
 Loads a `stage.tbl` file from the argument given, using that instead of the internal exe table.
+
+## ModCS.Stage.DrawVector()
+
+```lua
+ModCS.Stage.DrawVector(fx, fy)
+```
+
+Draws the special tile effects on screen at the camera position `fx` and `fy`, making it function for a new game mode the user may add.
+
+## ModCS.Stage.DrawBack()
+
+```lua
+ModCS.Stage.DrawBack(fx, fy)
+```
+
+Draws the background tiles on screen at the camera position `fx` and `fy`, making it function for a new game mode the user may add.
+
+## ModCS.Stage.DrawFront()
+
+```lua
+ModCS.Stage.DrawFront(fx, fy)
+```
+
+Draws the foreground tiles on screen at the camera position `fx` and `fy`, making it function for a new game mode the user may add.
 
 ## ModCS.Stage.OnTransfer()
 

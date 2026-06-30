@@ -46,3 +46,27 @@ ModCS.Caret.GetByBufferIndex(index)
 ```
 
 Directly gets `index` Caret from the Caret buffer.
+
+## ModCS.Caret.Init()
+
+```lua
+ModCS.Caret.Init()
+```
+
+Resets all Carets, like done when starting a new save.
+
+## ModCS.Caret.ActMain()
+
+```lua
+ModCS.Caret.ActMain()
+```
+
+Runs the Caret action code -- Should probably only be ran in a case where you're overwriting a game mode.
+
+## ModCS.Caret.DrawMain()
+
+```lua
+ModCS.Caret.DrawMain(fx, fy)
+```
+
+Draws the carets on screen at the camera position `fx` and `fy`, making it function for a new game mode the user may add.

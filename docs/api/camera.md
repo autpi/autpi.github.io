@@ -42,6 +42,22 @@ ModCS.Camera.GetYPos()
 
 Returns the camera's Y axis position in [Pixel Units](/api/objects/pixel/).
 
+## ModCS.Camera.GetRealXPos()
+
+```lua
+ModCS.Camera.GetRealXPos()
+```
+
+Returns the camera's proper X axis position as a real integer number.
+
+## ModCS.Camera.GetRealYPos()
+
+```lua
+ModCS.Camera.GetRealYPos()
+```
+
+Returns the camera's proper Y axis position as a real integer number.
+
 ## ModCS.Camera.SetQuake()
 
 ```lua
@@ -50,9 +66,34 @@ ModCS.Camera.SetQuake(time)
 
 Makes the camera shake for `time` ticks.
 
+## ModCS.Camera.SetAltQuake()
+
+```lua
+ModCS.Camera.SetAltQuake(time)
+```
+
+Makes the camera shake more violently for `time` ticks.
+
+## ModCS.Camera.ResetQuake()
+
+```lua
+ModCS.Camera.ResetQuake()
+```
+
+Resets both the camera quake / alt quake.
+
 ## ModCS.Camera.SetPlayerFocus()
+
 ```lua
 ModCS.Camera.SetPlayerFocus(time)
 ```
 
 Makes the camera focus on the player in `time` ticks. Default would be 16.
+
+## ModCS.Camera.ActMain()
+
+```lua
+ModCS.Camera.ActMain()
+```
+
+Runs the code for making the camera actually move around -- Should probably only be ran in a case where you're overwriting a game mode.

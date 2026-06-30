@@ -80,6 +80,74 @@ ModCS.Game.SetGameFlags(num)
 
 Set the current "Game Flags" value to `num`.
 
+## ModCS.Game.Random()
+
+```lua
+ModCS.Game.Random(min, max)
+```
+
+Returns a random value between `min` and `max` using the games Random function.
+
+## ModCS.Game.Random2()
+
+```lua
+ModCS.Game.Random2(min, max)
+```
+
+Returns a random value between `min` and `max`, using the games random function except multipling the input by 512, then giving the result divided by 512, to account for [Pixel Unit](/api/objects/pixel/) positions.
+
+## ModCS.Game.Random3()
+
+```lua
+ModCS.Game.Random3(min, max)
+```
+
+Returns a random value between `min` and `max`, using the games random function except multipling the input by 512, then giving the result. To account for scenarios where you need to use [Pixel Unit](/api/objects/pixel/) style math but need the full integer value.
+
+## ModCS.Game.SetBit()
+
+```lua
+ModCS.Game.SetBit(value, bit)
+```
+
+Sets a `bit` on `value`, with the usage of `value = ModCS.Game.SetBit(value, bit)`.
+
+??? Example
+	This example will set the players collision flag to "being in water".
+	```lua linenums="1"
+	ModCS.Player.hit_flag = ModCS.Game.SetBit(ModCS.Player.hit_flag, 0x100)
+	```
+
+## ModCS.Game.UnsetBit()
+
+```lua
+ModCS.Game.UnsetBit(value, bit)
+```
+
+Unsets a `bit` on `value`, with the usage of `value = ModCS.Game.UnsetBit(value, bit)`.
+
+??? Example
+	This example will unset the players collision flag from "being in water".
+	```lua linenums="1"
+	ModCS.Player.hit_flag = ModCS.Game.UnsetBit(ModCS.Player.hit_flag, 0x100)
+	```
+
+## ModCS.Game.CheckBit()
+
+```lua
+ModCS.Game.CheckBit(value, bit)
+```
+
+Checks if the `value` used has the `bit` set.
+
+??? Example
+	This example will check if the players collision flag is "being in water".
+	```lua linenums="1"
+	if (ModCS.Game.CheckBit(ModCS.Player.hit_flag, 0x100)) then
+		print("woohoo! We're in water! So fun!")
+	end
+	```
+
 ## ModCS.Game.Act()
 
 This function is called every frame before anything is updated or drawn in the main game loop.

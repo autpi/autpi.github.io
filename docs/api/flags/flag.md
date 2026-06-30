@@ -35,3 +35,11 @@ ModCS.Flag.Get(no)
 ```
 
 Returns true if the flag `no` is set. Returns false otherwise.
+
+## ModCS.Flag.Init()
+
+```lua
+ModCS.Flag.Init()
+```
+
+Resets all flags, including SkipFlags, to their default state.

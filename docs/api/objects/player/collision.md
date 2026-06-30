@@ -32,6 +32,14 @@ ModCS.Player.TouchFloor()
 
 Returns true if the player is touching a floor.
 
+## ModCS.Player.TouchSurface()
+
+```lua
+ModCS.Player.TouchSurface()
+```
+
+Returns true if the player is touching a floor, left wall, right wall, or ceiling.
+
 ## ModCS.Player.TouchSlopeRight()
 
 ```lua

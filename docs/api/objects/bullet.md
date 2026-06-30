@@ -55,3 +55,67 @@ ModCS.Bullet.GetByBufferIndex(index)
 ```
 
 Directly gets `index` Bullet from the Bullet buffer.
+
+## ModCS.Bullet.IsActive()
+
+```lua
+ModCS.Bullet.IsActive(id)
+```
+
+Returns true if a bullet of type `id` currently exist on screen.
+
+## ModCS.Bullet.GetAmount()
+
+```lua
+ModCS.Bullet.GetAmount()
+```
+
+Returns the amount of bullets that exist in the bullet table.
+
+## ModCS.Bullet.Init()
+
+```lua
+ModCS.Bullet.Init()
+```
+
+Resets all Bullets, like done when starting a new save.
+
+## ModCS.Bullet.ActMain()
+
+```lua
+ModCS.Bullet.ActMain()
+```
+
+Runs the Bullet action code -- Should probably only be ran in a case where you're overwriting a game mode.
+
+## ModCS.Bullet.TileHitCode()
+
+```lua
+ModCS.Bullet.TileHitCode()
+```
+
+Runs the code for bullets collision against tiles -- Should probably only be ran in a case where you're overwriting a game mode.
+
+## ModCS.Bullet.NpcHitCode()
+
+```lua
+ModCS.Bullet.NpcHitCode()
+```
+
+Runs the code for bullets collision against npcs -- Should probably only be ran in a case where you're overwriting a game mode.
+
+## ModCS.Bullet.BossHitCode()
+
+```lua
+ModCS.Bullet.BossHitCode()
+```
+
+Runs the code for bullets collision against bosses -- Should probably only be ran in a case where you're overwriting a game mode.
+
+## ModCS.Bullet.DrawMain()
+
+```lua
+ModCS.Bullet.DrawMain(fx, fy)
+```
+
+Draws the bullets on screen at the camera position `fx` and `fy`, making it function for a new game mode the user may add.

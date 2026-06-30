@@ -29,6 +29,9 @@ ModCS.Key.Right(hold) -- Can be either Right arrow key or ? in DoConfig
 ModCS.Key.Down(hold) -- Can be either Down arrow key or > in DoConfig
 ModCS.Key.Shift(hold) -- Shift key (Not used by gamepad)
 ModCS.Key.Pause(hold) -- Escape/Pause key
+ModCS.Key.F1(hold) -- F1 key
+ModCS.Key.F2(hold) -- F2 key
+ModCS.Key.Plus(hold) -- Plus/Equals key
 ```
 
 ## ModCS.Key.GetKey()
@@ -62,6 +65,22 @@ ModCS.Key.ClearKeyTrg()
 ```
 
 Clears the value of the games `gKeyTrg` value, setting it to 0.
+
+## ModCS.Key.SetKey()
+
+```lua
+ModCS.Key.SetKey(num)
+```
+
+Sets the games `gKey` value to `num`.
+
+## ModCS.Key.SetKeyTrg()
+
+```lua
+ModCS.Key.SetKeyTrg(num)
+```
+
+Sets the games `gKeyTrg` value to `num`.
 
 ## ModCS.Key.GetTrg()
 

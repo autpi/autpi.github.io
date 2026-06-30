@@ -70,6 +70,14 @@ ModCS.Npc.GetViewbox(npc)
 
 Returns the sprite offset [RangeRect](/api/objects/range/) of `npc`.
 
+## ModCS.Npc.Copy()
+
+```lua
+ModCS.Npc.Copy(source, target)
+```
+
+Copies npc `source` to `target`, meaning you can copy a Npcs current data to another (if you need to reuse it).
+
 ## ModCS.Npc.ActCode()
 
 ```lua
@@ -99,13 +107,21 @@ ModCS.Npc.Delete(npc)
 
 Deletes `npc`. Same effect as `<DNP`.
 
+## ModCS.Npc.Vanish()
+
+```lua
+ModCS.Npc.Vanish(npc)
+```
+
+Makes a `npc` disappear and get set to npc ID 3, resetting many of its variables.
+
 ## ModCS.Npc.Kill()
 
 ```lua
-ModCS.Npc.Kill(npc)
+ModCS.Npc.Kill(npc, vanish)
 ```
 
-Kills `npc`.
+Kills `npc`. `vanish` is an optional Boolean that defaults to true. If set to false, it won't set the npcs ID to 3 along with other things.
 
 ## ModCS.Npc.KillOnNextFrame()
 
@@ -114,6 +130,14 @@ ModCS.Npc.KillOnNextFrame(npc)
 ```
 
 Sets `npc` for deletion on the next frame.
+
+## ModCS.Npc.KillEveryID()
+
+```lua
+ModCS.Npc.KillEveryID(id, smoke)
+```
+
+Kills all entities of type `id`. `smoke` is an optional Boolean, if true, the entities will be replaced with smoke when they disappear.
 
 ## ModCS.Npc.Move()
 

@@ -1,6 +1,6 @@
 # ModCS.Profile
 
-The **ModCS.Mod namespace** contains functions related to the save files of mods.
+The **ModCS.Profile namespace** contains functions related to the save files of mods.
 
 ## ModCS.Profile.Exists()
 

@@ -28,7 +28,7 @@ Adds weapon of type `id` to the inventory. If a weapon of type `id` exists, upda
 ModCS.Arms.Remove(id)
 ```
 
- Removes weapon of type `id` from the inventory.
+Removes weapon of type `id` from the inventory.
 
 ## ModCS.Arms.UseAmmo()
 
@@ -94,7 +94,15 @@ Removes `exp` amount of XP from the player.
 ModCS.Arms.GetLevels(id)
 ```
 
-Returns an array of the XP requirements for each level of weapon of type `id`. These values are read from the `data/arms_level.tbl` file.
+Returns an array of the XP requirements for each level of weapon of type `id`. These values are read from the `data/arms_level.tbl`, or `data/arms_level.yaml` file. If no file exists, it will instead read from the game executable.
+
+## ModCS.Arms.GetAmount()
+
+```lua
+ModCS.Arms.GetAmount()
+```
+
+Returns the amount of weapons that exist in the arms level table.
 
 ## ModCS.Arms.GetCurrent()
 
@@ -112,6 +120,14 @@ ModCS.Arms.GetCurrentInvPos()
 
 Returns the inventory position of the currently selected weapon.
 
+## ModCS.Arms.SetCurrentInvPos()
+
+```lua
+ModCS.Arms.SetCurrentInvPos(num)
+```
+
+Sets the inventory position of the currently selected weapon to `num`.
+
 ## ModCS.Arms.GetByID()
 
 ```lua
@@ -128,6 +144,62 @@ ModCS.Arms.GetByInvPos(pos)
 
 Return a ModCS.Arms of the weapon at inventory position `pos`.
 
+## ModCS.Arms.CountBullet()
+
+```lua
+ModCS.Arms.CountBullet(id)
+```
+
+Returns how many bullets are on screen from Weapon `id`.
+
+## ModCS.Arms.ResetCurrentEXP()
+
+```lua
+ModCS.Arms.ResetCurrentExp()
+```
+
+Resets currently selected weapon to Level 1, and removes all Exp from it.
+
+## ModCS.Arms.IsCurrentMaxExp()
+
+```lua
+ModCS.Arms.IsCurrentMaxExp()
+```
+
+Returns true if the currently selected weapon is at Max Experience.
+
+## ModCS.Arms.Clear()
+
+```lua
+ModCS.Arms.Clear()
+```
+
+Removes all weapons from the players inventory.
+
+## ModCS.Arms.GetExpX()
+
+```lua
+ModCS.Arms.GetExpX()
+```
+
+Returns the X position variable used for the EXP hud at certain parts of hud/inventory code.
+
+## ModCS.Arms.SetExpX()
+
+```lua
+ModCS.Arms.SetExpX(num)
+```
+
+Sets the X position variable used for the EXP hud at certain parts of hud/inventory code to the `num` value given.
+
+## ModCS.Arms.ActMain()
+
+```lua
+ModCS.Arms.ActMain()
+```
+
+Runs the code for allowing the player to shoot their weapons -- Should probably only be ran in a case where you're overwriting a game mode, as this already runs normally. See the 'Weapon Shoot Code' segment for info on how to add new weapons instead.
+
 ## Weapon Shoot Code
 
 The way Cave Story weapons work internally is a certain function runs on loop if the player is currently holding a certain type of weapon. ModCS allows you to override a weapon's shoot code. If a function in the `ModCS.Arms.Shoot` array is defined with the index `X` (where `X` is the Weapon Type ID you want to override) in your Lua script the game will run that function instead of the built-in shoot function.
@@ -138,4 +210,3 @@ The way Cave Story weapons work internally is a certain function runs on loop if
 		-- ...
 	end
 	```
-

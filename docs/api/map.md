@@ -55,3 +55,27 @@ ModCS.Map.ChangeTile(no, x, y)
 ```
 
 Changes the tile at tile unit coordinates `x` and `y` of the current map to tile `no`.
+
+## ModCS.Map.ShiftTile()
+
+```lua
+ModCS.Map.ShiftTile(x, y)
+```
+
+"Shifts" the tile at tile unit coordinates `x` and `y` 1 tile ID to the left in its tileset. This is what "Snack" blocks do when destroyed.
+
+## ModCS.Map.DeleteTile()
+
+```lua
+ModCS.Map.DeleteTile(x, y)
+```
+
+Deletes the tile at tile unit coordinates `x` and `y`.
+
+## ModCS.Map.PutName()
+
+```lua
+ModCS.Map.PutName(mini)
+```
+
+Draws the current room name on screen. `mini` is an optional Boolean, if true, the map name will render like it does in the Map System, rather than a `<MNA` style.

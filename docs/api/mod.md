@@ -1,6 +1,6 @@
 # ModCS.Mod
 
-The **ModCS.Mod namespace** contains functions related to customizing releases of mods.
+The **ModCS.Mod namespace** contains functions related to customizing certain aspects of mods.
 
 ## ModCS.Mod.SetName()
 
@@ -16,15 +16,7 @@ Sets the window title of the game to `name`. This function will only work at top
 ModCS.Mod.SetAuthor(name)
 ```
 
-Sets the author of game to `name`. The author will be displayed in the version window.
-
-## ModCS.Mod.SetVersion()
-
-```lua
-ModCS.Mod.SetVersion(v1, v2, v3, v4)
-```
-
-Sets the version of the game to `v1`.`v2`.`v3`.`v4`. This version will be in the version window.
+Sets the author of game to `name`. Currently, the author only is used in debug printing for using `ModCS.AddEntity()`
 
 ## ModCS.Mod.SetOpening()
 
@@ -75,10 +67,32 @@ Sets the life of the map boss `no` to the `hp` value given. The table for map bo
 10: Ballos Ball (Phase 4)
 ```
 
-# ModCS.Mod.SetStartMyChar()
+## ModCS.Mod.SetStartMyChar()
 
 ```lua
 ModCS.Mod.SetStartMyChar(life, maxLife, direct)
 ```
 
 Set the starting new-game state of the players current life to `life`, max life to `maxLife`, and direction to `direct`.
+
+## ModCS.Mod.SetStartMode()
+
+```lua
+ModCS.Mod.SetStartMode(id)
+```
+
+Set the games boot-up / reset state to the mode `id`. The modes include:
+
+```
+1: Opening
+2: Title
+3: Gameplay
+```
+
+## ModCS.Mod.GetStartMode()
+
+```lua
+ModCS.Mod.GetStartMode()
+```
+
+Returns the games boot-up / reset state id.

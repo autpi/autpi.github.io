@@ -68,47 +68,29 @@ During the credits sequence the rect's `left` value will equal to 160.
 !!! Note
 	The main difference between ModCS.GetGameRect() and ModCS.GetFullRect() is how both values are used in the original game itself. The full Rect is often the default view limiting value for drawing a bitmap, while the game Rect is the view limiting value for game related objects (NPCs, player, map tiles, etc.). You can use these Rects with [ModCS.Rect.PutEx()](/api/drawing/rect/#modcsrectputex)
 
-## ModCS.GetDataPath()
-
-Returns the path of the data folder the game is using.
-
 ## ModCS.GetModulePath()
+
+```lua
+ModCS.GetModulePath
+```
 
 Returns the path of the folder the games executable is located in.
 
-## ModCS.SetDataPath()
+## ModCS.GetDataPath()
 
 ```lua
-ModCS.SetDataPath("NewPathHere")
+ModCS.GetDataPath()
 ```
 
-Set the data path of the game to the argument you give it. It is advised to use lua string functions with the Module Path to change the data path.
+Returns the path of the data folder the game is using.
 
-## ModCS.SetModulePath()
+## ModCS.GetSavePath()
 
 ```lua
-ModCS.SetModulePath("NewPathHere")
+ModCS.GetSavePath()
 ```
 
-Set the module path of the game to the argument you give it. It is ill-advised to do this, unless you know what you're doing.
-
-## ModCS.AddCaret()
-
-```lua
-ModCS.AddCaret("MyCaretName")
-```
-
-For AutPI compatibility, if you add new carets you should add them using this command first, so other dll mods or scripts dont interfere with what you're doing.
-This simply adds a blank slot letting the game know its already being used.
-
-## ModCS.AddEntity()
-
-```lua
-ModCS.AddEntity("MyEntityName")
-```
-
-For AutPI compatibility, if you add new entities you should add them using this command first, so other dll mods or scripts dont interfere with what you're doing.
-This simply adds a blank slot letting the game know its already being used.
+Returns the path of the save folder where save files are located.
 
 ## ModCS.SystemTask()
 
@@ -130,7 +112,7 @@ Brings up the Escape Menu.
 ModCS.SetMag(number)
 ```
 
-Set the games "magnification" factor to a different value. This is how the game decides to resize sprites in different window resolutions and scales them up properly.
+Set the games "magnification" factor to a different value. This is how the game decides to resize sprites in different window resolutions and scales them up properly. **This does not work in CSE2LE, as the function is very wacky for consoles and such!**
 
 ```
 Magnification 1 = 320x240

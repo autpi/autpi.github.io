@@ -43,13 +43,13 @@ Surfaces are represented by an ID. This table contains all vanilla game surfaces
 ## ModCS.Surface.Create()
 
 ```lua
-ModCS.Surface.Create(id, width, height)
+ModCS.Surface.Create(id, width, height, system)
 ModCS.Surface.Create(id, path)
 ```
 
 Create a surface. Returns a ModCS.Surface which contains the ID of the surface.
 
-If `width` and `height` are specified, create a generic surface with those sizes.
+If `width` and `height` are specified, create a generic surface with those sizes, with an extra optional boolean called `system` used for things like a screenshot (I'm unsure exactly what it does, but better to have the option than not).
 
 If a `path` is specified, create a surface with the bitmap given in that path. The path's root is always the game's data folder. Do not add a `.bmp` file extension to the path. Surfaces created from bitmap files use the specified bitmap file's size.
 
@@ -62,6 +62,16 @@ If a `path` is specified, create a surface with the bitmap given in that path. T
 
 !!! Note
 	When creating custom surfaces, it's reccomended to use surface IDs over 40, as it's possible in the future for ModCS to add new custom surfaces below this number.
+
+## ModCS.Surface.CreateResource()
+
+```lua
+ModCS.Surface.CreateResource(id, path)
+```
+
+Create a surface. Returns a ModCS.Surface which contains the ID of the surface.
+
+This loads the `path` from the Executables data, so where the Credits images and the PIXEL image are.
 
 ## ModCS.Surface.LoadBitmap()
 

@@ -32,6 +32,14 @@ ModCS.Npc.TouchFloor(npc)
 
 Returns true if `npc` is touching a floor.
 
+## ModCS.Npc.TouchSurface()
+
+```lua
+ModCS.Npc.TouchSurface(npc)
+```
+
+Returns true if `npc` is touching a floor, left wall, right wall, or ceiling.
+
 ## ModCS.Npc.TouchSlopeRight()
 
 ```lua

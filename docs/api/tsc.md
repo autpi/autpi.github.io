@@ -78,6 +78,54 @@ During a custom TextScript command, get the `string` argument of the running com
 	<STRTest$
 	```
 
+## ModCS.Tsc.Stop()
+
+```lua
+ModCS.Tsc.Stop()
+```
+
+Stops any Tsc running, and resets tsc flags back to normal -- Similar to running `<END`.
+
+## ModCS.Tsc.GetPath()
+
+```lua
+ModCS.Tsc.GetPath()
+```
+
+Returns the currently loaded Tsc file path, starting from the data folder.
+
+## ModCS.Tsc.Load()
+
+```lua
+ModCS.Tsc.Load(path)
+```
+
+Loads a tsc file from `path`, starting from the data directory.
+
+## ModCS.Tsc.Load2()
+
+```lua
+ModCS.Tsc.Load2(path)
+```
+
+Loads a tsc file from `path`, starting from the data directory with `Head.tsc` loaded above your file.
+
+## ModCS.Tsc.ActMain()
+
+```lua
+ModCS.Tsc.ActMain()
+```
+
+Runs the TextScript action code, returning a value if should quit/restart game (if 0, quit, if 2, restart). Useful if adding a new game mode that uses TextScript.
+
+## ModCS.Tsc.DrawMain()
+
+```lua
+ModCS.Tsc.DrawMain()
+```
+
+Draws the TextScript TextBox on screen, useful if adding a new game mode that uses TextScript.
+
 ## Custom Commands
 
 ModCS allows you to overwrite TextScript commands and to have custom ones as well. If a function `ModCS.Tsc.Command.XXX` is defined (where XXX is the custom command) the function will run when the TextScript parser reaches command `<XXX`.

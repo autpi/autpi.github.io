@@ -47,3 +47,19 @@ ModCS.Sound.ChangePan(id, pan)
 ```
 
 Change the panning of sound effect `id` to `pan`.
+
+## ModCS.Sound.SetNoise()
+
+```lua
+ModCS.Sound.SetNoise(no, freq)
+```
+
+Starts the propeller/water stream noise with type `no` (1 or 2, no more) and frequency `freq`. `freq` only works for Type 1.
+
+## ModCS.Sound.EndNoise()
+
+```lua
+ModCS.Sound.EndNoise()
+```
+
+Ends the propeller/water stream noise.

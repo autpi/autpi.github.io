@@ -1,4 +1,4 @@
-site_name: ModCS Documentation
+site_name: AutPI/ModCS Documentation
 
 plugins:
   - search
@@ -28,22 +28,36 @@ nav:
     - 'index.md'
   - 'API Reference':
     - 'api/modcs.md'
+    - 'api/constants.md'
+    - 'api/back.md'
+    - 'api/camera.md'
+    - 'api/credits.md'
     - 'api/game.md'
     - 'api/key.md'
+    - 'api/map.md'
+    - 'api/minimap.md'
+    - 'api/mod.md'
+    - 'api/modloader.md'
+    - 'api/profile.md'
+    - 'api/stage.md'
+    - 'api/timer.md'
+    - 'api/triangle.md'
+    - 'api/tsc.md'
+    - 'api/valueview.md'
+    - 'api/warp.md'
     - 'Drawing':
       - 'api/drawing/surface.md'
       - 'api/drawing/rect.md'
       - 'api/drawing/color.md'
-    - 'api/map.md' 
-    - 'api/stage.md'
-    - 'api/tsc.md'
+    - 'Effects':
+      - 'api/effects/fade.md'
+      - 'api/effects/flash.md'
     - 'Flags':
       - 'api/flags/flag.md'
       - 'api/flags/skipflag.md'
     - 'Sound':
       - 'api/sound/music.md'
       - 'api/sound/sound.md'
-    - 'api/camera.md'
     - 'Inventory':
       - 'api/inventory/arms.md'
       - 'api/inventory/item.md'
@@ -51,6 +65,8 @@ nav:
       - 'api/objects/pixel.md'
       - 'api/objects/direction.md'
       - 'api/objects/range.md'
+      - 'api/objects/boss.md'
+      - 'api/objects/star.md'
       - 'Player':
         - 'api/objects/player.md'
         - 'api/objects/player/collision.md'
@@ -71,10 +87,17 @@ nav:
         - 'api/objects/caret.md'
         - 'api/objects/caret/functions.md'
         - 'api/objects/caret/id.md'
-    - 'api/profile.md'
-    - 'api/mod.md'
-    - 'api/modloader.md'
   - 'options.md'
+  #- 'Extra DLL Lua':
+  #  - 'dlls/expansions.md'
+  #- 'CSE2LE':
+  #  - 'cse2le/main.md'
+  #  - 'cse2le/configuration.md'
+  #  - 'cse2le/ModCS/modcs.md'
+  #  - 'cse2le/ModCS/config.md'
+  #  - 'cse2le/ModCS/mod.md'
+  #  - 'cse2le/ModCS/multiplayer.md'
+  #  - 'cse2le/ModCS/drawing/rect.md'
 
 extra_javascript:
   - assets/dontSaveScroll.js
