@@ -1,0 +1,3442 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../modcs/">
+      
+      
+        <link rel="next" href="../back/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>ModCS.Const - Constant Variables - AutPI/ModCS Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#modcsconst-constant-variables" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="AutPI/ModCS Documentation" class="md-header__button md-logo" aria-label="AutPI/ModCS Documentation" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AutPI/ModCS Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ModCS.Const - Constant Variables
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="red"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="red"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../modcs/" class="md-tabs__link">
+          
+  
+  
+  API Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../options/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Extra Options
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AutPI/ModCS Documentation" class="md-nav__button md-logo" aria-label="AutPI/ModCS Documentation" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    AutPI/ModCS Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Home
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    API Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modcs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS Object - Basics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.Const - Constant Variables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../back/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.Back
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../camera/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.Camera
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../credits/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.Credits
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../game/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.Game
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../key/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.Key
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.Map
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../minimap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.MiniMap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mod/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.Mod
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modloader/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.ModLoader
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../profile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.Profile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.Stage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../timer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.Timer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../triangle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.Triangle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tsc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.Tsc
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../valueview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.ValueView
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../warp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.Warp
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_19" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_19" id="__nav_2_19_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Drawing
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_19_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_19">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Drawing
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../drawing/surface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.Surface
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../drawing/rect/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.Rect
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../drawing/color/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.Color
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_20" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_20" id="__nav_2_20_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Effects
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_20_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_20">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Effects
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../effects/fade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.Fade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../effects/flash/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.Flash
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_21" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_21" id="__nav_2_21_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flags
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_21_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_21">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Flags
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../flags/flag/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.Flag
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../flags/skipflag/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.SkipFlag
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_22" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_22" id="__nav_2_22_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sound
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_22_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_22">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Sound
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sound/music/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.Music
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sound/sound/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.Sound
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_23" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_23" id="__nav_2_23_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inventory
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_23_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_23">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Inventory
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inventory/arms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.Arms
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inventory/item/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.Item
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_24" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_24" id="__nav_2_24_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Game Objects
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_24_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_24">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Game Objects
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objects/pixel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pixel Unit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objects/direction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Direction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objects/range/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.RangeRect
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objects/boss/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.Boss
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objects/star/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.Star
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_24_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_24_6" id="__nav_2_24_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Player
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_24_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_24_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Player
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objects/player/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.Player
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objects/player/collision/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Player Collision detection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objects/player/equip/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Player Equip
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_24_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_24_7" id="__nav_2_24_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NPCs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_24_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_24_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    NPCs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objects/npc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.Npc
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objects/npc/functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NPC Manipulation Functions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objects/npc/collision/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NPC Collision detection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objects/npc/id/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NPC Type IDs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objects/npc/bits/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NPC Bits
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_24_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_24_8" id="__nav_2_24_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bullets
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_24_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_24_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bullets
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objects/bullet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.Bullet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objects/bullet/functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bullet Manipulation Functions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objects/bullet/collision/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bullet Collision detection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objects/bullet/id/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bullet Type IDs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objects/bullet/bits/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bullet Bits
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_24_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_24_9" id="__nav_2_24_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Carets
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_24_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_24_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Carets
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objects/caret/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ModCS.Caret
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objects/caret/functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Caret Manipulation Functions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../objects/caret/id/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Caret Type IDs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../options/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Extra Options
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="modcsconst-constant-variables">ModCS.Const - Constant Variables</h1>
+<p>There are times where you may want to quickly pull (but not edit) certain values used in Cave Story for different things, such as the ARMS, ITEM, or NPC limit.</p>
+<p>Below is a table of Constants you can pull, via <code>ModCS.Const.x</code>, where <code>x</code> is the constant from the table below.</p>
+<details class="example">
+<summary>Example</summary>
+<p>This example will draw the NPC limit in the top-left corner of the screen using ModCS.PutNumber().
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kr">function</span><span class="w"> </span><span class="nc">ModCS</span><span class="p">.</span><span class="nc">Game</span><span class="p">.</span><span class="nf">Draw</span><span class="p">()</span>
+<span class="w">    </span><span class="nv">ModCS</span><span class="p">.</span><span class="nf">PutNumber</span><span class="p">(</span><span class="nv">ModCS</span><span class="p">.</span><span class="py">Const</span><span class="p">.</span><span class="py">NPC_MAX</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+<span class="kr">end</span>
+</code></pre></div></td></tr></table></div></p>
+</details>
+<p>Please note, that some of the "Values" in this table can change depending on what engine, or what other dlls you are using to modify your game.</p>
+<table>
+<thead>
+<tr>
+<th>Constant</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ARMS_MAX</code></td>
+<td><code>8</code></td>
+<td>The maximum amount of Weapons the Player can hold.</td>
+</tr>
+<tr>
+<td><code>BOSS_MAX</code></td>
+<td><code>20</code></td>
+<td>The maximum amount of Map Bosses in the games <code>gBoss</code> object, including boss-related entities.</td>
+</tr>
+<tr>
+<td><code>BULLET_MAX</code></td>
+<td><code>64</code></td>
+<td>The maximum amount of Bullets allowed in the world.</td>
+</tr>
+<tr>
+<td><code>CARET_MAX</code></td>
+<td><code>64</code></td>
+<td>The maximum amount of Carets allowed in the world.</td>
+</tr>
+<tr>
+<td><code>ITEM_MAX</code></td>
+<td><code>32</code></td>
+<td>The maximum amount of Items the Player can hold.</td>
+</tr>
+<tr>
+<td><code>MAX_STRIP</code></td>
+<td><code>16</code></td>
+<td>The maximum amount of 'Casts' allowed on screen during the credits sequence.</td>
+</tr>
+<tr>
+<td><code>NPC_MAX</code></td>
+<td><code>512</code></td>
+<td>The maximum amount of Npcs allows in the world.</td>
+</tr>
+<tr>
+<td><code>SE_MAX</code></td>
+<td><code>160</code></td>
+<td>The maximum amount of Sound Effects.</td>
+</tr>
+<tr>
+<td><code>STAGE_MAX</code></td>
+<td><code>8</code></td>
+<td>The maximum amount of Teleporter warp locations.</td>
+</tr>
+<tr>
+<td><code>MODE_OPENING</code></td>
+<td><code>1</code></td>
+<td>The "game mode" ID for the Opening mode.</td>
+</tr>
+<tr>
+<td><code>MODE_TITLE</code></td>
+<td><code>2</code></td>
+<td>The "game mode" ID for the Title Screen mode.</td>
+</tr>
+<tr>
+<td><code>MODE_ACTION</code></td>
+<td><code>3</code></td>
+<td>The "game mode" ID for the Gameplay / Action mode.</td>
+</tr>
+<tr>
+<td><code>BACKGROUND_TYPE_STATIONARY</code></td>
+<td><code>0</code></td>
+<td>Background type ID for the background standing still.</td>
+</tr>
+<tr>
+<td><code>BACKGROUND_TYPE_MOVE_DISTANT</code></td>
+<td><code>1</code></td>
+<td>Background type ID for the background following distantly.</td>
+</tr>
+<tr>
+<td><code>BACKGROUND_TYPE_MOVE_NEAR</code></td>
+<td><code>2</code></td>
+<td>Background type ID for the background following closer to the foreground.</td>
+</tr>
+<tr>
+<td><code>BACKGROUND_TYPE_WATER</code></td>
+<td><code>3</code></td>
+<td>Background type ID for drawing the water texture on screen moving up and down with water level.</td>
+</tr>
+<tr>
+<td><code>BACKGROUND_TYPE_BLACK</code></td>
+<td><code>4</code></td>
+<td>This background type ID does nothing, however is used in the Stage Table from rooms with no back.</td>
+</tr>
+<tr>
+<td><code>BACKGROUND_TYPE_AUTOSCROLL</code></td>
+<td><code>5</code></td>
+<td>Background type ID autoscrolls the background left, like during the Ironhead boss fight.</td>
+</tr>
+<tr>
+<td><code>BACKGROUND_TYPE_CLOUDS_WINDY</code></td>
+<td><code>6</code></td>
+<td>Background type ID autoscrolls layers of the background, used for Outer Wall.</td>
+</tr>
+<tr>
+<td><code>BACKGROUND_TYPE_CLOUDS</code></td>
+<td><code>7</code></td>
+<td>Background type ID autoscrolls layers of the background, used for Balcony.</td>
+</tr>
+<tr>
+<td><code>CARET_NULL</code></td>
+<td><code>0</code></td>
+<td>Caret type ID that does nothing.</td>
+</tr>
+<tr>
+<td><code>CARET_BUBBLE</code></td>
+<td><code>1</code></td>
+<td>Caret type ID used for Gunfish/Lava droplet effects.</td>
+</tr>
+<tr>
+<td><code>CARET_PROJECTILE_DISSIPATION</code></td>
+<td><code>2</code></td>
+<td>Caret type ID used for when a bullet disappears, along with other effects.</td>
+</tr>
+<tr>
+<td><code>CARET_SHOOT</code></td>
+<td><code>3</code></td>
+<td>Caret type ID used for when a bullet is fired from the Players weapon.</td>
+</tr>
+<tr>
+<td><code>CARET_SNAKE_AFTERIMAGE</code></td>
+<td><code>4</code></td>
+<td>Caret type ID used for the Snake weapons "afterimage" effect.</td>
+</tr>
+<tr>
+<td><code>CARET_ZZZ</code></td>
+<td><code>5</code></td>
+<td>Caret type ID used for the Hermit Gunsmith's snoring effect.</td>
+</tr>
+<tr>
+<td><code>CARET_SNAKE_AFTERIMAGE_DUPLICATE</code></td>
+<td><code>6</code></td>
+<td>Duplicate of the <code>CARET_SNAKE_AFTERIMAGE</code> id, for some reason.</td>
+</tr>
+<tr>
+<td><code>CARET_EXHAUST</code></td>
+<td><code>7</code></td>
+<td>Caret type ID used for the Booster 0.8 / 2.0 exhaust when boosting.</td>
+</tr>
+<tr>
+<td><code>CARET_DROWNED_QUOTE</code></td>
+<td><code>8</code></td>
+<td>Caret type ID used for when the Player drowns -- The "MyChar" sprite is replaced with this.</td>
+</tr>
+<tr>
+<td><code>CARET_QUESTION_MARK</code></td>
+<td><code>9</code></td>
+<td>Caret type ID used for when the Player interacts with nothing.</td>
+</tr>
+<tr>
+<td><code>CARET_LEVEL_UP</code></td>
+<td><code>10</code></td>
+<td>Caret type ID used for when the Player's weapon levels up/down. <code>DIR_LEFT</code> is up, <code>DIR_RIGHT</code> is down.</td>
+</tr>
+<tr>
+<td><code>CARET_HURT_PARTICLES</code></td>
+<td><code>11</code></td>
+<td>Caret type ID used for when a Npc/Boss is hurt.</td>
+</tr>
+<tr>
+<td><code>CARET_EXPLOSION</code></td>
+<td><code>12</code></td>
+<td>Caret type ID used for a explosion-style effect, like when the Player dies.</td>
+</tr>
+<tr>
+<td><code>CARET_TINY_PARTICLES</code></td>
+<td><code>13</code></td>
+<td>Caret type ID used for the tiny particles that appear when the Player bonks the ceiling, for example.</td>
+</tr>
+<tr>
+<td><code>CARET_UNKNOWN</code></td>
+<td><code>14</code></td>
+<td>Caret type ID 'unused'. Code exists for this caret, but it's nonfunctional and unknown what it was for.</td>
+</tr>
+<tr>
+<td><code>CARET_PROJECTILE_DISSIPATION_TINY</code></td>
+<td><code>15</code></td>
+<td>Caret type ID used for a tinier version of the projectile dissipation effect, used for Bubbler/Bubbline.</td>
+</tr>
+<tr>
+<td><code>CARET_EMPTY</code></td>
+<td><code>16</code></td>
+<td>Caret type ID used for when the Players weapon runs out of ammo.</td>
+</tr>
+<tr>
+<td><code>CARET_PUSH_JUMP_KEY</code></td>
+<td><code>17</code></td>
+<td>Caret type ID unused, shows 'PUSH JUMP KEY' on screen. It does not despawn.</td>
+</tr>
+<tr>
+<td><code>CREDIT_MODE_STOP</code></td>
+<td><code>0</code></td>
+<td>???</td>
+</tr>
+<tr>
+<td><code>CREDIT_MODE_SCROLL_READ</code></td>
+<td><code>1</code></td>
+<td>???</td>
+</tr>
+<tr>
+<td><code>CREDIT_MODE_SCROLL_WAIT</code></td>
+<td><code>2</code></td>
+<td>???</td>
+</tr>
+<tr>
+<td><code>DIR_LEFT</code></td>
+<td><code>0</code></td>
+<td>Direction ID for the 'Left' direction in most cases.</td>
+</tr>
+<tr>
+<td><code>DIR_UP</code></td>
+<td><code>1</code></td>
+<td>Direction ID for the 'Up' direction in most cases.</td>
+</tr>
+<tr>
+<td><code>DIR_RIGHT</code></td>
+<td><code>2</code></td>
+<td>Direction ID for the 'Right' direction in most cases. This is also frequently used as a "Alternate Mode" option.</td>
+</tr>
+<tr>
+<td><code>DIR_DOWN</code></td>
+<td><code>3</code></td>
+<td>Direction ID for the 'Down' direction in most cases.</td>
+</tr>
+<tr>
+<td><code>DIR_AUTO</code></td>
+<td><code>4</code></td>
+<td>Direction ID for the 'Center' fade effect, as well as making an Npc face the Player depending on where the Player is.</td>
+</tr>
+<tr>
+<td><code>DIR_OTHER</code></td>
+<td><code>5</code></td>
+<td>???</td>
+</tr>
+<tr>
+<td><code>EQUIP_BOOSTER_0_8</code></td>
+<td><code>1</code></td>
+<td>Player Equipment ID for the Booster 0.8.</td>
+</tr>
+<tr>
+<td><code>EQUIP_MAP</code></td>
+<td><code>2</code></td>
+<td>Player Equipment ID for the Map System.</td>
+</tr>
+<tr>
+<td><code>EQUIP_ARMS_BARRIER</code></td>
+<td><code>4</code></td>
+<td>Player Equipment ID for the Arms Barrier.</td>
+</tr>
+<tr>
+<td><code>EQUIP_TURBOCHARGE</code></td>
+<td><code>8</code></td>
+<td>Player Equipment ID for the Turbocharge.</td>
+</tr>
+<tr>
+<td><code>EQUIP_AIR_TANK</code></td>
+<td><code>16</code></td>
+<td>Player Equipment ID for the Air Tank.</td>
+</tr>
+<tr>
+<td><code>EQUIP_BOOSTER_2_0</code></td>
+<td><code>32</code></td>
+<td>Player Equipment ID for the Booster 2.0.</td>
+</tr>
+<tr>
+<td><code>EQUIP_MIMIGA_MASK</code></td>
+<td><code>64</code></td>
+<td>Player Equipment ID for the Mimiga Mask.</td>
+</tr>
+<tr>
+<td><code>EQUIP_WHIMSICAL_STAR</code></td>
+<td><code>128</code></td>
+<td>Player Equipment ID for the Whimsical Star.</td>
+</tr>
+<tr>
+<td><code>EQUIP_NIKUMARU_COUNTER</code></td>
+<td><code>256</code></td>
+<td>Player Equipment ID for the Nikumaru/290 counter.</td>
+</tr>
+<tr>
+<td><code>ESCRETURN_exit</code></td>
+<td><code>0</code></td>
+<td>Used when telling the game to quit.</td>
+</tr>
+<tr>
+<td><code>ESCRETURN_continue</code></td>
+<td><code>1</code></td>
+<td>Used when telling the game to continue what it was doing previously.</td>
+</tr>
+<tr>
+<td><code>ESCRETURN_restart</code></td>
+<td><code>2</code></td>
+<td>Used when telling the game to restart.</td>
+</tr>
+<tr>
+<td><code>FLASH_MODE_EXPLOSION</code></td>
+<td><code>1</code></td>
+<td>'Flash' ID for a explosion type flash effect spawning.</td>
+</tr>
+<tr>
+<td><code>FLASH_MODE_FLASH</code></td>
+<td><code>2</code></td>
+<td>'Flash' ID for the screen flashing.</td>
+</tr>
+<tr>
+<td><code>ILLUSTRATION_ACTION_IDLE</code></td>
+<td><code>0</code></td>
+<td>???</td>
+</tr>
+<tr>
+<td><code>ILLUSTRATION_ACTION_SLIDE_IN</code></td>
+<td><code>1</code></td>
+<td>???</td>
+</tr>
+<tr>
+<td><code>ILLUSTRATION_ACTION_SLIDE_OUT</code></td>
+<td><code>2</code></td>
+<td>???</td>
+</tr>
+<tr>
+<td><code>KEY_LEFT</code></td>
+<td><code>1</code></td>
+<td>Key ID for the left movement key.</td>
+</tr>
+<tr>
+<td><code>KEY_RIGHT</code></td>
+<td><code>2</code></td>
+<td>Key ID for the right movement key.</td>
+</tr>
+<tr>
+<td><code>KEY_UP</code></td>
+<td><code>4</code></td>
+<td>Key ID for the up movement key.</td>
+</tr>
+<tr>
+<td><code>KEY_DOWN</code></td>
+<td><code>8</code></td>
+<td>Key ID for the down movement key.</td>
+</tr>
+<tr>
+<td><code>KEY_MAP</code></td>
+<td><code>16</code></td>
+<td>Key ID for the Map System.</td>
+</tr>
+<tr>
+<td><code>KEY_X</code></td>
+<td><code>32</code></td>
+<td>Key ID for the X key.</td>
+</tr>
+<tr>
+<td><code>KEY_Z</code></td>
+<td><code>64</code></td>
+<td>Key ID for the Z key.</td>
+</tr>
+<tr>
+<td><code>KEY_ARMS</code></td>
+<td><code>128</code></td>
+<td>Key ID for the "Switching Arms Right" key.</td>
+</tr>
+<tr>
+<td><code>KEY_ARMSREV</code></td>
+<td><code>256</code></td>
+<td>Key ID for the "Switching Arms Left" key.</td>
+</tr>
+<tr>
+<td><code>KEY_SHIFT</code></td>
+<td><code>512</code></td>
+<td>Key ID for the Left Shift key.</td>
+</tr>
+<tr>
+<td><code>KEY_F1</code></td>
+<td><code>1024</code></td>
+<td>Key ID for the F1 key.</td>
+</tr>
+<tr>
+<td><code>KEY_F2</code></td>
+<td><code>2048</code></td>
+<td>Key ID for the F2 key.</td>
+</tr>
+<tr>
+<td><code>KEY_ITEM</code></td>
+<td><code>4096</code></td>
+<td>Key ID for the Inventory key.</td>
+</tr>
+<tr>
+<td><code>KEY_ESCAPE</code></td>
+<td><code>32768</code></td>
+<td>Key ID for the Escape/Pause key.</td>
+</tr>
+<tr>
+<td><code>KEY_ALT_LEFT</code></td>
+<td><code>65536</code></td>
+<td>Key ID for the alternative left key.</td>
+</tr>
+<tr>
+<td><code>KEY_ALT_DOWN</code></td>
+<td><code>131072</code></td>
+<td>Key ID for the alternative down key.</td>
+</tr>
+<tr>
+<td><code>KEY_ALT_RIGHT</code></td>
+<td><code>262144</code></td>
+<td>Key ID for the alternative right key.</td>
+</tr>
+<tr>
+<td><code>KEY_ALT_UP</code></td>
+<td><code>1572864</code></td>
+<td>Key ID for the alternative up key. (L + Plus/Equals merged)</td>
+</tr>
+<tr>
+<td><code>KEY_L</code></td>
+<td><code>524288</code></td>
+<td>Key ID for the 'L' key.</td>
+</tr>
+<tr>
+<td><code>KEY_PLUS</code></td>
+<td><code>1048576</code></td>
+<td>Key ID for the 'Plus/Equals' key.</td>
+</tr>
+<tr>
+<td><code>NPC_SOLID_SOFT</code></td>
+<td><code>1</code></td>
+<td>Npc bit flag for making the Npc softly push the Player out of its collision.</td>
+</tr>
+<tr>
+<td><code>NPC_IGNORE_TILE_44</code></td>
+<td><code>2</code></td>
+<td>Npc bit flag for making the Npc ignore the "0x44" tile IDs collision.</td>
+</tr>
+<tr>
+<td><code>NPC_INVULNERABLE</code></td>
+<td><code>4</code></td>
+<td>Npc bit flag for making the Npc unable to take damage, and use a special effect on hit.</td>
+</tr>
+<tr>
+<td><code>NPC_IGNORE_SOLIDITY</code></td>
+<td><code>8</code></td>
+<td>Npc bit flag for making the Npc ignore tile collision.</td>
+</tr>
+<tr>
+<td><code>NPC_BOUNCY</code></td>
+<td><code>16</code></td>
+<td>Npc bit flag for making the Npc bouncy on top.</td>
+</tr>
+<tr>
+<td><code>NPC_SHOOTABLE</code></td>
+<td><code>32</code></td>
+<td>Npc bit flag used for making the Npc shootable by bullets.</td>
+</tr>
+<tr>
+<td><code>NPC_SOLID_HARD</code></td>
+<td><code>64</code></td>
+<td>Npc bit flag used for making the Npc solid, similar to a tile.</td>
+</tr>
+<tr>
+<td><code>NPC_REAR_AND_TOP_DONT_HURT</code></td>
+<td><code>128</code></td>
+<td>Npc bit flag used for ???.</td>
+</tr>
+<tr>
+<td><code>NPC_EVENT_WHEN_TOUCHED</code></td>
+<td><code>256</code></td>
+<td>Npc bit flag used for running a Tsc event when touched by the Player.</td>
+</tr>
+<tr>
+<td><code>NPC_EVENT_WHEN_KILLED</code></td>
+<td><code>512</code></td>
+<td>Npc bit flag used for running a Tsc event when killed instead of doing the normal death scenario.</td>
+</tr>
+<tr>
+<td><code>NPC_APPEAR_WHEN_FLAG_SET</code></td>
+<td><code>2048</code></td>
+<td>Npc bit flag used for making an Npc show up on room load when a Flag ID is set.</td>
+</tr>
+<tr>
+<td><code>NPC_SPAWN_IN_OTHER_DIRECTION</code></td>
+<td><code>4096</code></td>
+<td>Npc bit flag used for making an Npc spawn with direction <code>DIR_RIGHT</code> instead of <code>DIR_LEFT</code>.</td>
+</tr>
+<tr>
+<td><code>NPC_INTERACTABLE</code></td>
+<td><code>8192</code></td>
+<td>Npc bit flag used for making an Npc interactable for the Player.</td>
+</tr>
+<tr>
+<td><code>NPC_HIDE_WHEN_FLAG_SET</code></td>
+<td><code>16384</code></td>
+<td>Npc bit flag used for making an Npc disappear on room load when a Flag ID is set.</td>
+</tr>
+<tr>
+<td><code>NPC_SHOW_DAMAGE</code></td>
+<td><code>32768</code></td>
+<td>Npc bit flag used for showing the damage 'ValueView' when the Npc is hit.</td>
+</tr>
+<tr>
+<td><code>MUS_SILENCE</code></td>
+<td><code>0</code></td>
+<td>Music ID for nothing, silence.</td>
+</tr>
+<tr>
+<td><code>MUS_MISCHIEVOUS_ROBOT</code></td>
+<td><code>1</code></td>
+<td>Music ID for Mischievous Robot.</td>
+</tr>
+<tr>
+<td><code>MUS_SAFETY</code></td>
+<td><code>2</code></td>
+<td>Music ID for Safety.</td>
+</tr>
+<tr>
+<td><code>MUS_GAME_OVER</code></td>
+<td><code>3</code></td>
+<td>Music ID for 'Game Over'.</td>
+</tr>
+<tr>
+<td><code>MUS_GRAVITY</code></td>
+<td><code>4</code></td>
+<td>Music ID for Gravity.</td>
+</tr>
+<tr>
+<td><code>MUS_ON_TO_GRASSTOWN</code></td>
+<td><code>5</code></td>
+<td>Music ID for 'On to Grasstown!'</td>
+</tr>
+<tr>
+<td><code>MUS_MELTDOWN2</code></td>
+<td><code>6</code></td>
+<td>Music ID for Meltdown 2.</td>
+</tr>
+<tr>
+<td><code>MUS_EYES_OF_FLAME</code></td>
+<td><code>7</code></td>
+<td>Music ID for 'Eyes of Flame'.</td>
+</tr>
+<tr>
+<td><code>MUS_GESTATION</code></td>
+<td><code>8</code></td>
+<td>Music ID for Gestation.</td>
+</tr>
+<tr>
+<td><code>MUS_MIMIGA_TOWN</code></td>
+<td><code>9</code></td>
+<td>Music ID for Mimiga Town.</td>
+</tr>
+<tr>
+<td><code>MUS_GOT_ITEM</code></td>
+<td><code>10</code></td>
+<td>Music ID for the fanfare used when getting an item.</td>
+</tr>
+<tr>
+<td><code>MUS_BALROGS_THEME</code></td>
+<td><code>11</code></td>
+<td>Music ID for Balrogs Theme.</td>
+</tr>
+<tr>
+<td><code>MUS_CEMETERY</code></td>
+<td><code>12</code></td>
+<td>Music ID for Cemetery.</td>
+</tr>
+<tr>
+<td><code>MUS_PLANT</code></td>
+<td><code>13</code></td>
+<td>Music ID for Plant.</td>
+</tr>
+<tr>
+<td><code>MUS_PULSE</code></td>
+<td><code>14</code></td>
+<td>Music ID for Pulse.</td>
+</tr>
+<tr>
+<td><code>MUS_VICTORY</code></td>
+<td><code>15</code></td>
+<td>Music ID for the fanfare used for winning.</td>
+</tr>
+<tr>
+<td><code>MUS_GET_HEART_TANK</code></td>
+<td><code>16</code></td>
+<td>Music ID for the fanfare used for getting a life capsule.</td>
+</tr>
+<tr>
+<td><code>MUS_TYRANT</code></td>
+<td><code>17</code></td>
+<td>Music ID for Tyrant.</td>
+</tr>
+<tr>
+<td><code>MUS_RUN</code></td>
+<td><code>18</code></td>
+<td>Music ID for 'Run!'</td>
+</tr>
+<tr>
+<td><code>MUS_JENKA1</code></td>
+<td><code>19</code></td>
+<td>Music ID for Jenka 1.</td>
+</tr>
+<tr>
+<td><code>MUS_LABYRINTH_FIGHT</code></td>
+<td><code>20</code></td>
+<td>Music ID for Labyrinth Fight.</td>
+</tr>
+<tr>
+<td><code>MUS_ACCESS</code></td>
+<td><code>21</code></td>
+<td>Music ID for Access.</td>
+</tr>
+<tr>
+<td><code>MUS_OPPRESSION</code></td>
+<td><code>22</code></td>
+<td>Music ID for Oppression.</td>
+</tr>
+<tr>
+<td><code>MUS_GEOTHERMAL</code></td>
+<td><code>23</code></td>
+<td>Music ID for Geothermal.</td>
+</tr>
+<tr>
+<td><code>MUS_CAVE_STORY</code></td>
+<td><code>24</code></td>
+<td>Music ID for 'Cave Story'.</td>
+</tr>
+<tr>
+<td><code>MUS_MOONSONG</code></td>
+<td><code>25</code></td>
+<td>Music ID for Moonsong.</td>
+</tr>
+<tr>
+<td><code>MUS_HEROS_END</code></td>
+<td><code>26</code></td>
+<td>Music ID for Heros End.</td>
+</tr>
+<tr>
+<td><code>MUS_SCORCHING_BACK</code></td>
+<td><code>27</code></td>
+<td>Music ID for Scorching Back.</td>
+</tr>
+<tr>
+<td><code>MUS_QUIET</code></td>
+<td><code>28</code></td>
+<td>Music ID for Quiet.</td>
+</tr>
+<tr>
+<td><code>MUS_LAST_CAVE</code></td>
+<td><code>29</code></td>
+<td>Music ID for Last Cave.</td>
+</tr>
+<tr>
+<td><code>MUS_BALCONY</code></td>
+<td><code>30</code></td>
+<td>Music ID for Balcony.</td>
+</tr>
+<tr>
+<td><code>MUS_CHARGE</code></td>
+<td><code>31</code></td>
+<td>Music ID for Charge.</td>
+</tr>
+<tr>
+<td><code>MUS_LAST_BATTLE</code></td>
+<td><code>32</code></td>
+<td>Music ID for Last Battle.</td>
+</tr>
+<tr>
+<td><code>MUS_THE_WAY_BACK_HOME</code></td>
+<td><code>33</code></td>
+<td>Music ID for 'The Way Back Home`.</td>
+</tr>
+<tr>
+<td><code>MUS_ZOMBIE</code></td>
+<td><code>34</code></td>
+<td>Music ID for Zombie.</td>
+</tr>
+<tr>
+<td><code>MUS_BREAK_DOWN</code></td>
+<td><code>35</code></td>
+<td>Music ID for Break Down.</td>
+</tr>
+<tr>
+<td><code>MUS_RUNNING_HELL</code></td>
+<td><code>36</code></td>
+<td>Music ID for Running Hell.</td>
+</tr>
+<tr>
+<td><code>MUS_JENKA2</code></td>
+<td><code>37</code></td>
+<td>Music ID for Jenka 2.</td>
+</tr>
+<tr>
+<td><code>MUS_LIVING_WATERWAY</code></td>
+<td><code>38</code></td>
+<td>Music ID for Living Waterway.</td>
+</tr>
+<tr>
+<td><code>MUS_SEAL_CHAMBER</code></td>
+<td><code>39</code></td>
+<td>Music ID for Seal Chamber.</td>
+</tr>
+<tr>
+<td><code>MUS_TOROKOS_THEME</code></td>
+<td><code>40</code></td>
+<td>Music ID for Toroko's theme.</td>
+</tr>
+<tr>
+<td><code>MUS_WHITE</code></td>
+<td><code>41</code></td>
+<td>Music ID for 'White'.</td>
+</tr>
+<tr>
+<td><code>SURFACE_ID_TITLE</code></td>
+<td><code>0</code></td>
+<td>Surface ID for the Title screen image.</td>
+</tr>
+<tr>
+<td><code>SURFACE_ID_PIXEL</code></td>
+<td><code>1</code></td>
+<td>Surface ID for the 'PIXEL' copyright image.</td>
+</tr>
+<tr>
+<td><code>SURFACE_ID_LEVEL_TILESET</code></td>
+<td><code>2</code></td>
+<td>Surface ID for the current rooms tileset.</td>
+</tr>
+<tr>
+<td><code>SURFACE_ID_FADE</code></td>
+<td><code>6</code></td>
+<td>Surface ID for the games Fade effect.</td>
+</tr>
+<tr>
+<td><code>SURFACE_ID_ITEM_IMAGE</code></td>
+<td><code>8</code></td>
+<td>Surface ID for the Inventory items.</td>
+</tr>
+<tr>
+<td><code>SURFACE_ID_MAP</code></td>
+<td><code>9</code></td>
+<td>Surface ID for the Map System.</td>
+</tr>
+<tr>
+<td><code>SURFACE_ID_SCREEN_GRAB</code></td>
+<td><code>10</code></td>
+<td>Surface ID for the screenshot that is taken when entering inventory/related screens.</td>
+</tr>
+<tr>
+<td><code>SURFACE_ID_ARMS</code></td>
+<td><code>11</code></td>
+<td>Surface ID for the Weapons spritesheet.</td>
+</tr>
+<tr>
+<td><code>SURFACE_ID_ARMS_IMAGE</code></td>
+<td><code>12</code></td>
+<td>Surface ID for the Weapon icons.</td>
+</tr>
+<tr>
+<td><code>SURFACE_ID_ROOM_NAME</code></td>
+<td><code>13</code></td>
+<td>Surface ID for the room name text.</td>
+</tr>
+<tr>
+<td><code>SURFACE_ID_STAGE_ITEM</code></td>
+<td><code>14</code></td>
+<td>Surface ID for the teleporter warp icons.</td>
+</tr>
+<tr>
+<td><code>SURFACE_ID_LOADING</code></td>
+<td><code>15</code></td>
+<td>Surface ID for the 'LOADING' text that shows up on boot.</td>
+</tr>
+<tr>
+<td><code>SURFACE_ID_MY_CHAR</code></td>
+<td><code>16</code></td>
+<td>Surface ID for the Players spritesheet.</td>
+</tr>
+<tr>
+<td><code>SURFACE_ID_BULLET</code></td>
+<td><code>17</code></td>
+<td>Surface ID for the Bullets spritesheet.</td>
+</tr>
+<tr>
+<td><code>SURFACE_ID_CARET</code></td>
+<td><code>19</code></td>
+<td>Surface ID for the Carets spritesheet.</td>
+</tr>
+<tr>
+<td><code>SURFACE_ID_NPC_SYM</code></td>
+<td><code>20</code></td>
+<td>Surface ID for the 'NpcSym' spritesheet.</td>
+</tr>
+<tr>
+<td><code>SURFACE_ID_LEVEL_SPRITESET_1</code></td>
+<td><code>21</code></td>
+<td>Surface ID for the current rooms "first" Npc spritesheet.</td>
+</tr>
+<tr>
+<td><code>SURFACE_ID_LEVEL_SPRITESET_2</code></td>
+<td><code>22</code></td>
+<td>Surface ID for the current rooms "second" Npc spritesheet.</td>
+</tr>
+<tr>
+<td><code>SURFACE_ID_NPC_REGU</code></td>
+<td><code>23</code></td>
+<td>Surface ID for the 'NpcRegu' spritesheet.</td>
+</tr>
+<tr>
+<td><code>SURFACE_ID_TEXT_BOX</code></td>
+<td><code>26</code></td>
+<td>Surface ID for the TextBox and other Misc. sprites.</td>
+</tr>
+<tr>
+<td><code>SURFACE_ID_FACE</code></td>
+<td><code>27</code></td>
+<td>Surface ID for the Face spritesheets used in <code>&lt;FAC</code>.</td>
+</tr>
+<tr>
+<td><code>SURFACE_ID_LEVEL_BACKGROUND</code></td>
+<td><code>28</code></td>
+<td>Surface ID for the current rooms loaded background.</td>
+</tr>
+<tr>
+<td><code>SURFACE_ID_VALUE_VIEW</code></td>
+<td><code>29</code></td>
+<td>Surface ID for the 'ValueView's that get drawn on screen.</td>
+</tr>
+<tr>
+<td><code>SURFACE_ID_TEXT_LINE1</code></td>
+<td><code>30</code></td>
+<td>Surface ID used for the Tsc text drawing.</td>
+</tr>
+<tr>
+<td><code>SURFACE_ID_TEXT_LINE2</code></td>
+<td><code>31</code></td>
+<td>Surface ID used for the Tsc text drawing.</td>
+</tr>
+<tr>
+<td><code>SURFACE_ID_TEXT_LINE3</code></td>
+<td><code>32</code></td>
+<td>Surface ID used for the Tsc text drawing.</td>
+</tr>
+<tr>
+<td><code>SURFACE_ID_TEXT_LINE4</code></td>
+<td><code>33</code></td>
+<td>Surface ID used for the Tsc text drawing.</td>
+</tr>
+<tr>
+<td><code>SURFACE_ID_TEXT_LINE5</code></td>
+<td><code>34</code></td>
+<td>Surface ID used for the Tsc text drawing.</td>
+</tr>
+<tr>
+<td><code>SURFACE_ID_CREDIT_CAST</code></td>
+<td><code>35</code></td>
+<td>Surface ID used for the Credits 'cast' being drawn on screen.</td>
+</tr>
+<tr>
+<td><code>SURFACE_ID_CREDITS_IMAGE</code></td>
+<td><code>36</code></td>
+<td>Surface ID used for the Credits illustrations that appear on the side.</td>
+</tr>
+<tr>
+<td><code>SURFACE_ID_CASTS</code></td>
+<td><code>37</code></td>
+<td>Surface ID used for the Credits 'cast' spritesheet.</td>
+</tr>
+<tr>
+<td><code>TSC_BUFFER_SIZE</code></td>
+<td><code>20480</code></td>
+<td>The amount of Bytes that a Tsc file can be loaded into (including Head.tsc)</td>
+</tr>
+<tr>
+<td><code>WINDOW_WIDTH</code></td>
+<td><code>320</code></td>
+<td>The games screen width, in original size rather than multiplied via currently set mode.</td>
+</tr>
+<tr>
+<td><code>WINDOW_HEIGHT</code></td>
+<td><code>240</code></td>
+<td>The games screen height, in original size rather than multiplied via currently set mode.</td>
+</tr>
+<tr>
+<td><code>VS</code></td>
+<td><code>512</code></td>
+<td>Value the user may divide/multiply by in order to get world/screen coordinates.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["toc.integrate", "navigation.tabs"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../assets/dontSaveScroll.js"></script>
+      
+    
+  </body>
+</html>
